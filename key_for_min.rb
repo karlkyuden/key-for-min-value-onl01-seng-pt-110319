@@ -7,5 +7,6 @@ def key_for_min_value(name_hash)
     if min_key <= value
       puts "#{min_key} is now #{value}."
     end
+      min_key = value
   end
 end
