@@ -4,9 +4,9 @@
 def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
     min_key = key
-    if min_key <= value
+    if key[min_key] <= value
       puts "#{min_key} is now #{value}."
     end
-      min_key = value
+      min_key = key
   end
 end
