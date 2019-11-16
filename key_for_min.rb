@@ -8,12 +8,10 @@ def key_for_min_value(name_hash)
     min_key = name_hash.first[0]
     min_value = name_hash.first[1]
     name_hash.each do |key, value|
-  
-      if min_value < value
-        min_key = key
-        min_value = value
+      if min_value > value
+          min_key = key
+          min_value = value
       end
-
     end
     puts min_value
     puts min_key
