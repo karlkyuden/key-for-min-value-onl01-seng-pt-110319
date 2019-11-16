@@ -5,12 +5,13 @@ def key_for_min_value(name_hash)
   if name_hash = {}
     return nil
   else
-    name_hash.collect do |key, value|
+    min_key = name_hash.first[1]
+    # name_hash.collect do |key, value|
   
-      if key[min_key] <= value
-        puts "#{min_key} is now #{value}."
-      end
-        min_key = key
-    end
+    #   if key[min_key] <= value
+    #     puts "#{min_key} is now #{value}."
+    #   end
+    #     min_key = key
+    # end
   end
 end
